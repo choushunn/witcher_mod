@@ -6,38 +6,38 @@
 
 1. 克隆本仓库到本地：
 
-   `````
+   ```
    git clone https://github.com/choushunn/witcher_mod.git
    ```
 
 2. 进入项目目录：
 
-   ````
+   ```
    cd witcher_mod
-   ````
+   ```
 
 3. 安装程序依赖：
 
-   ````
+   ```
    pip install -r requirements.txt
-   ````
+   ```
 
 ## 使用方法
 
 1. 打开 `settings.py` 文件，并修改以下配置项：
 
-   ````
+   ```
    GAME_NAME = 'The Witcher 3'
    GAME_NEXUS_ID = 952  # 巫师三在 Nexus Mods 网站上的 ID
    DOWNLOAD_DIR = '/path/to/download/directory'  # 下载目录
    CONCURRENT_REQUESTS = 16  # 并发请求数量
-   ````
+   ```
 
 2. 运行程序：
 
-   ````
+   ```
    scrapy crawl nexus_mods
-   ````
+   ```
 
 3. 程序会自动爬取 Nexus Mods 网站上的 Mod 信息，并下载到指定的下载目录中。
 
